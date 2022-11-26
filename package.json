@@ -1,0 +1,40 @@
+{
+  "name": "yaplog-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --exit-child --no-notify src/index.ts",
+    "lint": "eslint ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Elouan MAILLY",
+  "license": "GPL",
+  "dependencies": {
+    "@fastify/jwt": "^6.3.3",
+    "@fastify/swagger": "^8.1.0",
+    "@prisma/client": "^4.6.1",
+    "@types/node": "^18.11.9",
+    "argon2": "^0.30.2",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.0",
+    "pino-pretty": "^9.1.1",
+    "prisma": "^4.6.1",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "semantic-release": "^19.0.5",
+    "ts-node-dev": "^2.0.0"
+  }
+}
